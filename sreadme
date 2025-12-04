@@ -1,0 +1,52 @@
+# 3D Drone Simulator Upload Sheet
+
+**Creator:** tubakhxn
+
+## Why this file exists
+Use this sheet as a quick reference when publishing the simulator to GitHub or helping collaborators get started.
+
+## How to fork and sync the project
+1. Sign in to GitHub and open the main repository page you want to extend.
+2. Click **Fork** and choose your account to create a copy under your profile.
+3. Clone your fork locally:
+   ```powershell
+   git clone https://github.com/<your-user>/3D-Drone-Simulator.git
+   cd 3D-Drone-Simulator
+   ```
+4. Point an upstream remote to the original project so you can pull updates later:
+   ```powershell
+   git remote add upstream https://github.com/<original-owner>/3D-Drone-Simulator.git
+   ```
+5. To stay current, regularly fetch upstream changes and merge them into your fork:
+   ```powershell
+   git fetch upstream
+   git checkout main
+   git merge upstream/main
+   git push origin main
+   ```
+
+## How to run the simulator locally
+1. Open PowerShell and move into the project folder:
+   ```powershell
+   cd "c:\Users\Tuba Khan\Downloads\3D Drone"
+   ```
+2. (Recommended) Create and activate a virtual environment:
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\activate
+   ```
+3. Install all dependencies:
+   ```powershell
+   pip install -r requirements.txt
+   ```
+4. Launch the simulator entry point:
+   ```powershell
+   python -m src.drone_sim
+   ```
+5. Press `Esc` or close a render window to exit when you are finished testing.
+
+## Before uploading to GitHub
+- Run the simulator once to ensure nothing is broken.
+- Remove large temporary files (cache, recordings, etc.).
+- Commit with a clear message describing what changed.
+- Push to your fork and open a pull request pointing back to the original repository when ready.

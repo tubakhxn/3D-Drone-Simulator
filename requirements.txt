@@ -1,0 +1,7 @@
+opencv-python>=4.10.0
+mediapipe>=0.10.18
+pygame>=2.6.1
+PyOpenGL>=3.1.7
+PyOpenGL_accelerate>=3.1.7
+pyrr>=0.10.3
+numpy>=1.26.4
